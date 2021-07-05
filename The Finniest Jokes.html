@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="pi.jpeg">
+  <link rel="stylesheet" type="text/css" href="css3clock.css" />
+  <link rel="stylesheet" type="text/css" href="Website_CSS.css">
+  <script src="Website_JS.js"></script>
+  <title>The Finniest Jokes...</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome! To a site full of Finny Jokes!</h1>
+      
+      <div align="center">
+     <div>
+        <label>1. What's your name?<br />
+        <input id="name" type="text">
+        </label>
+        <br>
+        <label>2. What language do you speak?<br />
+        <select id="lang">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="plt">Pig-latin</option>
+            <option value="frc">French</option>
+        </select>
+        </label>
+        <br>
+        <button id="button" type="button">3. Want to be greeted? Click Here!</button>
+        <div id="message"></div>
+    </div>
+      </div>
+    <div align="center">
+      <div id="digital-clock"></div>
+<div id="liveclock" class="outer_face">
+
+<div class="marker oneseven"></div>
+<div class="marker twoeight"></div>
+<div class="marker fourten"></div>
+<div class="marker fiveeleven"></div>
+
+<div class="inner_face">
+<div class="hand hour"></div>
+<div class="hand minute"></div>
+<div class="hand second"></div>
+</div>
+
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+var $hands = $('#liveclock div.hand')
+
+window.requestAnimationFrame = window.requestAnimationFrame
+                               || window.mozRequestAnimationFrame
+                               || window.webkitRequestAnimationFrame
+                               || window.msRequestAnimationFrame
+                               || function(f){setTimeout(f, 60)}
+
+
+function updateclock(){
+	var curdate = new Date()
+	var hour_as_degree = ( curdate.getHours() + curdate.getMinutes()/60 ) / 12 * 360
+	var minute_as_degree = curdate.getMinutes() / 60 * 360
+	var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
+	$hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
+	$hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
+	$hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
+	requestAnimationFrame(updateclock)
+}
+
+requestAnimationFrame(updateclock)
+
+</script>
+
+  </header>
+  <section>
+   <p style="text-align:center;"> Here is some outdated, but enjoyable music!!</p>
+  <div align="center">
+   <p>Tones And I - Dance Monkey (Lyrics) 7clouds YouTube!!</p><a link href="https://www.youtube.com/watch?v=ehjQJb7wWqY"> YouTube Link</a>
+  <audio controls>
+    <source src="Tones and I - Dance Monkey (Lyrics).mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+    </div>
+  <div align="center">
+    <p>Juice Wrld - Lucid Dreams (Lyrics) 💔 7clouds YouTube</p><a link href="https://www.youtube.com/watch?v=IfBLD0ATrQA"> YouTube Link</a>
+  <audio controls>
+    <source src="Juice Wrld - Lucid Dreams (Lyrics) 💔.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+    </div>
+    <div align="center">
+  <video width="320" height="240" controls>
+  <source src="youTube-file.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  </div>
+   <img src="Scooby_MEME_FOR_REAL.png" alt="My Home-Made Meme!!!" class="center">
+   <img src="56-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="55-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="54-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="52-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="50-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="48-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="47-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="46-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="45-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="44-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="42-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="41-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="40-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="39-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="38-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="37-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="36-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="35-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="33-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="14-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="13-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="12-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="11-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+   <img src="10-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Joke Found From rd.com" class="center">
+  </section>
+<footer>
+  <p style="text-align:center;">Made By Finn <br><a href="mailto: joshie123.flaherty123@gmail.com">Send Me an Email!!</a><br>All But The first Joke, Was found at: <a link href="https://www.rd.com/funny-stuff/short-jokes/">rd.com(Reader's Digest)</a></p>
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" id="cc_link" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><p id="center">This work is licensed under a </p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><p>Creative Commons Attribution-ShareAlike 4.0 International License</p></a>.
+</footer>
+<script>
+  var welcome = document.querySelector("h1");
+  welcome.style.backgroundColor = "Blue"
+  welcome.style.textAlign = "center"
+  welcome.style.textDecoration = "underline"
+  welcome.style.color = "lightgreen"
+  
+    // Step 1: Find the element we want the event on
+  var button = document.getElementById("button");
+  // Step 2: Define the event listener function
+
+      
+  var onButtonClick = function() {
+    var name = document.getElementById("name").value;
+    var lang = document.getElementById("lang").value;
+    var greeting;
+    if (lang === "es") {
+        greeting = "Hola, " + name + "!!!! ";
+    } else if (lang === "plt") {
+        greeting = "Ello-hay, " + name + "!!!! ";
+    } else if (lang === "frc") {
+        greeting = "Bonjour, " + name + "!!!! ";
+    } else {
+        greeting = "Hello, " + name + "!!!! ";
+    }
+    document.getElementById("message").style.color = 'Red';
+    document.getElementById("message").style.backgroundColor = 'Black';
+    document.getElementById("message").style.width = "100px";
+    document.getElementById("message").textContent += greeting;
+  };
+  // Step 3: Attach event listener to element
+  button.addEventListener("click", onButtonClick);
+  button.addEventListener("click", display);
+</script>
+</body>
+</html>
