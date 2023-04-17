@@ -59,3 +59,9 @@ h1{
   color: violet;
   text-decoration: none;
 }
+table, th, td {
+  border: 1px solid black;
+  color: white;
+  text-decoration: bold;
+  background-color: black;
+}
