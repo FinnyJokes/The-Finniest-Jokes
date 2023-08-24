@@ -25,13 +25,20 @@ function getDateTime() {
          return dateTime;
     }
 
-    // example usage: realtime clock
+    // realtime clock
     setInterval(function(){
         currentTime = getDateTime();
         document.getElementById("digital-clock").innerHTML = currentTime;
     }, 1000);
 
-function display() {
+// alert in english
+function display0() {
    alert("WASSUP!!!! This SHOULD brighten your day! (No promises tho!)");
    alert("BTW Have fun reading");
+}
+
+//alert in spanish
+function display1() {
+     alert("¿Qué pasa? ¡Esto debería alegrarte el día! (Aunque no hay promesas)");
+     alert("Por cierto, ¡diviértete leyendo!");
 }

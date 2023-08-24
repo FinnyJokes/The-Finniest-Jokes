@@ -11,10 +11,14 @@
 </head>
 <body>
   <header>
-    <a class="siteLink" href="spanishIndex.html">Spanish Site</a>
+    <select id="lang">
+      <option value="en"><img src="AmericanFlag.webp" alt="American Flag"/>English</option>
+      <option value="es">Spanish</option>
+      <option value="plt">Pig-latin</option>
+      <option value="frc">French</option>
+  </select>
     <section>
     <h1>Welcome! To a site full of Finny Jokes!</h1>
-      
       <div align="center">
      <div>
         <label>1. What's your name?<br />
@@ -22,12 +26,7 @@
         </label>
         <br>
         <label>2. What language do you speak?<br />
-        <select id="lang">
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="plt">Pig-latin</option>
-            <option value="frc">French</option>
-        </select>
+        
         </label>
         <br>
         <button id="button" type="button">3. Want to be greeted? Click Here!</button>
@@ -191,21 +190,27 @@ requestAnimationFrame(updateclock)
     var greeting;
     if (lang === "es") {
         greeting = "Hola, " + name + "!!!! ";
+        alert("¿Qué pasa? ¡Esto debería alegrarte el día! (Aunque no hay promesas)");
+        alert("Por cierto, ¡diviértete leyendo!");
     } else if (lang === "plt") {
         greeting = "Ello-hay, " + name + "!!!! ";
+        alert("I'm not translating this into pig-latin. Deal.")
     } else if (lang === "frc") {
         greeting = "Bonjour, " + name + "!!!! ";
-    } else {
+        alert("Cela DEVRAIT égayer votre journée!(Mais aucune promesse !)")
+        alert("Au fait, bonne lecture")
+    } else if (lang === "en") {
         greeting = "Hello, " + name + "!!!! ";
+        alert("WASSUP!!!! This SHOULD brighten your day! (No promises tho!)");
+        alert("BTW Have fun reading");
     }
     document.getElementById("message").style.color = 'Red';
-    document.getElementById("message").style.backgroundColor = 'Black';
+    document.getElementById("message").style.backgroundColor = 'white';
     document.getElementById("message").style.width = "100px";
     document.getElementById("message").textContent += greeting;
   };
   // Step 3: Attach event listener to element
   button.addEventListener("click", onButtonClick);
-  button.addEventListener("click", display);
   console.log("Why are you viewing the console? Get the fuck out unless you're me.");
 </script>
 </body>
