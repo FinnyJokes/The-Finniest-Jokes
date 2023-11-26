@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+        }
+
+        .button {
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .display-box {
+            grid-column: 1 / span 4;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 20px;
+            text-align: right;
+            width: 200px;
+            overflow: auto; /* Use overflow property */
+        }
+    </style>
+
+</head>
+<body>
+	<!-- All comments were AI Generated. I dont have the patience to add all the comments. -->
+<div class="calculator">
+    <div class="display-box"></div>
+    <div class="button" onclick="appendToDisplay('7')">7</div>
+    <div class="button" onclick="appendToDisplay('8')">8</div>
+    <div class="button" onclick="appendToDisplay('9')">9</div>
+    <div class="button" onclick="appendToDisplay('/')">/</div>
+    <div class="button" onclick="appendToDisplay('4')">4</div>
+    <div class="button" onclick="appendToDisplay('5')">5</div>
+    <div class="button" onclick="appendToDisplay('6')">6</div>
+    <div class="button" onclick="appendToDisplay('*')">*</div>
+    <div class="button" onclick="appendToDisplay('1')">1</div>
+    <div class="button" onclick="appendToDisplay('2')">2</div>
+    <div class="button" onclick="appendToDisplay('3')">3</div>
+    <div class="button" onclick="appendToDisplay('-')">-</div>
+    <div class="button" onclick="appendToDisplay('0')">0</div>
+    <div class="button" onclick="appendToDisplay('.')">.</div>
+    <div class="button" onclick="calculateResult()">=</div>
+    <div class="button" onclick="appendToDisplay('+')">+</div>
+</div>
+
+<script>
+    // Appends the given value to the display.
+
+    // Parameters:
+    // - value: the value to be appended to the display.
+
+    // Return: undefined.
+    function appendToDisplay(value) {
+        const display = document.querySelector('.display-box');
+        display.textContent += value;
+    }
+
+    // Calculates the result of an arithmetic expression displayed in the `.display-box` element.
+    function calculateResult() {
+        const display = document.querySelector('.display-box');
+        const result = eval(display.textContent);
+        display.textContent = result;
+    }
+
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        const display = document.querySelector('.display-box');
+
+        if (key === 'Backspace') {
+            display.textContent = display.textContent.slice(0, -1);
+        } else if (key === 'c') {
+            display.textContent = '';
+        } else if (
+            key === '0' ||
+            key === '1' ||
+            key === '2' ||
+            key === '3' ||
+            key === '4' ||
+            key === '5' ||
+            key === '6' ||
+            key === '7' ||
+            key === '8' ||
+            key === '9' ||
+            key === '.' ||
+            key === '+' ||
+            key === '-' ||
+            key === '*' ||
+            key === '/'
+        ) {
+            appendToDisplay(key);
+        } else if (key === 'Enter') {
+            calculateResult();
+        }
+    });
+</script>
+</body>
+</html>
