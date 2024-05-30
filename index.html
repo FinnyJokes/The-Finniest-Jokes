@@ -13,6 +13,7 @@
 </head>
 <body>
   <header>
+    <a class="calLink" rel="link" href="Calculator.html"><p class="calLink">Calculator</p></a>
     <section>
     <h1>Welcome! To a site full of Finny Jokes!</h1>
     <h3 class="cl">The local time is:</h3>
@@ -82,10 +83,10 @@ requestAnimationFrame(updateclock)
 </script>
 </section>
 </header>
-  <section>
+<section>
    <p>Here is some outdated, but (hopefully) enjoyable music!! <br>I do try to update the music from time to time, so please don't be upset if the music is not your kind of music.
    <br>Also, I didn't get any responses on the 2024 music form, so I haven't updated it. Feel free to give a response and I'll update it accordingly.<br></p>
-   <p class="updates">Last Code Update: 02.23.2024<p>
+   <p class="updates">Last Code Update: 05.30.2024<p>
 	  <table>
 		  <tr>
 			  <th>Year</th>
@@ -146,7 +147,7 @@ requestAnimationFrame(updateclock)
     Your browser does not support the video tag.
   </video>
   </div>
-   <img class="joke" src="Scooby_MEME_FOR_REAL.png" alt="My Home-Made Meme!!!" >
+  <div>
    <img class="joke" src="56-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="First Joke Found From rd.com" >
    <img class="joke" src="55-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Second Joke Found From rd.com" >
    <img class="joke" src="54-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="Third Joke Found From rd.com" >
@@ -171,7 +172,8 @@ requestAnimationFrame(updateclock)
    <img class="joke" src="12-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="22nd Joke Found From rd.com" >
    <img class="joke" src="11-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="23rd Joke Found From rd.com" >
    <img class="joke" src="10-Short-Jokes-Anyone-Can-Remember-nicole.jpg" alt="24th Joke Found From rd.com" >
-  </section>
+  </div>
+</section>
 <footer>
   <p style="text-align:center;">Made By Finn <br><a href="mailto:contactme@finnyjokes.us">Send Me an Email at: contactme@finnyjokes.us</a><br>All Jokes, were found at: <a link href="https://www.rd.com/funny-stuff/short-jokes/">rd.com(Reader's Digest)</a>The "Scooby-Doo" meme is made by myself.</p>
   <p style="text-align:center;">I do not own any music, videos, or jokes on this page. All work is in accordance with United States Fair Use Policy, and all creators are properly accredited. To request removal of any content, please email me at <a href="mailto:GraysenGG@yahoo.com">GraysenGG@yahoo.com</a></p>
@@ -194,23 +196,23 @@ requestAnimationFrame(updateclock)
     var lang = document.getElementById("lang").value;
     var greeting;
     if (lang === "es") {
-        greeting = "Hola, " + name + "!!!! ";
+        greeting = "Hola, " + name + "! ";
         alert("¿Qué pasa? ¡Esto debería alegrarte el día! (Aunque no hay promesas)");
         alert("Por cierto, ¡diviértete leyendo!");
     } else if (lang === "plt") {
-        greeting = "Ello-hay, " + name + "!!!! ";
+        greeting = "Ello-hay, " + name + "! ";
         alert("I'm not translating this into pig-latin. Deal.")
     } else if (lang === "frc") {
-        greeting = "Bonjour, " + name + "!!!! ";
+        greeting = "Bonjour, " + name + "! ";
         alert("Cela DEVRAIT égayer votre journée!(Mais aucune promesse !)")
         alert("Au fait, bonne lecture")
     } else if (lang === "en") {
-        greeting = "Hello, " + name + "!!!! ";
+        greeting = "Hello, " + name + "! ";
         alert("WASSUP!!!! This SHOULD brighten your day! (No promises tho!)");
         alert("BTW Have fun reading");
     }
     document.getElementById("message").style.color = 'Red';
-    document.getElementById("message").style.backgroundColor = 'white';
+    document.getElementById("message").style.backgroundColor = "rgb(38,38,38)";
     document.getElementById("message").style.width = "100px";
     document.getElementById("message").textContent += greeting;
     document.getElementById("name").style.borderBlockEnd = "1px solid red";

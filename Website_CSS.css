@@ -89,3 +89,13 @@ table, th, td {
   margin-top: -18px;
   margin-bottom: 19px;
 }
+.calLink{
+  color: blue;
+  text-align: right;
+  margin-top: -5px;
+  margin-bottom: -15px;
+}
+a:visited, .calLink{
+  color: blue;
+  text-align: right;
+}
